@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="container">
 
-      <h1>HRMS Lite</h1>
+      <h1>HR Management System</h1>
 
       <button onClick={()=>setPage("employees")}>Employees</button>
       <button onClick={()=>setPage("attendance")}>Attendance</button>
