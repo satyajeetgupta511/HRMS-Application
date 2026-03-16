@@ -4,18 +4,23 @@ import Attendance from "./pages/Attendance"
 
 function App() {
 
-  const [page,setPage] = useState("employees")
+  const [page, setPage] = useState("employees")
 
   return (
-    <div className="container">
+    <div>
 
-      <h1>HR Management System</h1>
+      <h1>HRMS Lite</h1>
 
-      <button onClick={()=>setPage("employees")}>Employees</button>
-      <button onClick={()=>setPage("attendance")}>Attendance</button>
+      <button onClick={() => setPage("employees")}>
+        Employees
+      </button>
 
-      {page==="employees" && <Employees/>}
-      {page==="attendance" && <Attendance/>}
+      <button onClick={() => setPage("attendance")}>
+        Attendance
+      </button>
+
+      {page === "employees" && <Employees />}
+      {page === "attendance" && <Attendance />}
 
     </div>
   )
